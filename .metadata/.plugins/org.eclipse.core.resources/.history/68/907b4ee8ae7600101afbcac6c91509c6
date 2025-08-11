@@ -1,0 +1,21 @@
+package com.tka.Entity;
+
+import java.time.LocalDate;
+
+import org.hibernate.annotations.ManyToAny;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
+import lombok.Data;
+
+@Entity
+@Data
+public class BorrowRecord {
+	private Long id;
+	@ManyToOne
+	 private  String book;
+	@ManyToOne
+	private String member;
+	
+	private LocalDate borrowDate;
+}
