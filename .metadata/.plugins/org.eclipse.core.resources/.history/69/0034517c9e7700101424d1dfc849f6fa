@@ -1,0 +1,14 @@
+package com.tka.Service;
+
+import java.util.List;
+
+import com.tka.Controller.Book;
+
+public class BookService {
+
+	public List<Book> getAllBook() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
