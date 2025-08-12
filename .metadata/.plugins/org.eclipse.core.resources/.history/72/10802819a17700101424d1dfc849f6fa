@@ -1,0 +1,25 @@
+package com.tka.Controller;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import com.tka.Service.BookService;
+
+
+
+@Controller
+@RequestMapping("/api/Book")
+
+public class Book {
+
+	@Autowired
+	private BookService bookService;
+	@GetMapping
+    public List<Book> getAllBooks() {
+        return bookService.getAllBooks();
+    }
+	
+	
+}
