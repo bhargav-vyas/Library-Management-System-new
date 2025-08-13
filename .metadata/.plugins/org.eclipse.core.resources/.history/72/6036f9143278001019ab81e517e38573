@@ -1,0 +1,23 @@
+package com.tka.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.tka.Entity.Book;
+import com.tka.Repository.BookRespsitory;
+
+public class BookService {
+
+	@Autowired
+	private BookRespsitory bookRespsitory;
+	
+	public List<Book> getAllBooks() {
+        return bookRespsitory.findAll();
+    }
+
+
+
+
+
+}
