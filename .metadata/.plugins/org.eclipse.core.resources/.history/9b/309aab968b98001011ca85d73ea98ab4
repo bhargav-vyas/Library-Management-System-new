@@ -18,12 +18,14 @@ import com.tka.Service.BookService;
 public class BookController {
 
 	@Autowired
+	
+	 // this is checked but check once
+	
 	private BookService bookService;
 	@GetMapping("/book")
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }
-	
 	// add new book  not checked aip 
 	@PostMapping("/addnewBooks")
 	public List<Book>  addnewBooks(){
