@@ -1,0 +1,50 @@
+package com.tka.Service;
+
+i
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tka.Entity.Book;
+import com.tka.Repository.BookRespsitory;
+
+import jakarta.websocket.server.ServerEndpoint;
+@Service
+public class BookService {
+
+	@Autowired
+	private BookRespsitory bookRespsitory;
+	
+	public List<Book> getAllBooks() {
+        return bookRespsitory.findAll();
+    }
+
+	public Book addnewBooks(Book  book) {		
+		return bookRespsitory.save(book);
+	}
+
+	public Book getBookById(Long id) {
+		return bookRespsitory.findById(id).orElse(null);
+	}
+
+	public Book updateBook(Long id, Book updateBook) {
+		Optional<Book> optionalBook = bookRespsitory.findById(id);
+		if(optionalBook.isPresent()) {
+			Book book =optionalBook.get();
+			book.setTitle(updateBook.getTitle());
+			book.setAuthor(updateBook.getAuthor());
+			book.setIdbn(updateBook.getIdbn());
+			book.setPublishedYear(updateBook.getPublishedYear());
+			book.setCategory(updateBook.getCategory());
+			book.setAvailableCopies(updateBook.getAvailableCopies());
+			
+		}
+	}
+
+
+
+
+
+}
