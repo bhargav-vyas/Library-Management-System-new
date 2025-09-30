@@ -1,9 +1,0 @@
-package com.tka.Repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.tka.Entity.Book;
-
-public interface BookRespsitory extends JpaRepository<Book, Long> {
-
-}
