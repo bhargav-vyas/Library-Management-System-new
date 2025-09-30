@@ -1,0 +1,20 @@
+package com.tka.Repository;
+
+import java.util.Collection;
+
+
+
+import org.springframework.data.jpa.repository.JpaRepos
+import org.springframework.stereotype.Repository;itory;
+
+import com.tka.Entity.Book;
+@Repository
+public interface BookRespsitory extends JpaRepository<Book, Long> {
+
+	Collection<? extends Book> findByTitleCpntainingIgnoreCase(String title);
+
+	Collection<? extends Book> findByAuthorContainingIgnoreCase(String author);
+
+	Collection<? extends Book> findByCategoryContainingIgnoreCase(String category);
+
+}
