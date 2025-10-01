@@ -1,0 +1,10 @@
+package com.tka.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.tka.Entity.BorrowRecord;
+
+public interface  BorrowRecordRepository extends JpaRepository<	BorrowRecord, Long> {
+	
+	
+}
