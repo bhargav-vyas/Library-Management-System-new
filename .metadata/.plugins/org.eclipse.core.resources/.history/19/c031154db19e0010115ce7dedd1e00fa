@@ -1,0 +1,27 @@
+package com.tka.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tka.Entity.BorrowRecord;
+import com.tka.Service.BorrowRecordService;
+
+@RestController
+@RequestMapping("/api/borrow")
+public class BorrowRecordController {
+	
+	@Autowired
+	private  BorrowRecordService  borrowRecordService;
+	
+	@PostMapping("/{bookId}/member/{memberId}")
+	public BorrowRecord borrowBook(@PathVariable Long bookId, @PathVariable Long memberId
+			,@RequestParam String borrowerName) {
+	 return borrowRecordService.borrowBook(bookId,borrowerName,memberId);	
+	}
+
+}
+	
