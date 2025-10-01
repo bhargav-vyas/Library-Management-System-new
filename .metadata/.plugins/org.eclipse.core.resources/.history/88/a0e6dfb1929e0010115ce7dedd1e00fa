@@ -1,0 +1,36 @@
+package com.tka.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+import com.tka.Entity.Book;
+import com.tka.Entity.BorrowRecord;
+import com.tka.Repository.BookRepository;
+import com.tka.Repository.BorrowRecordRepository;
+
+@Service
+public class BorrowRecordService {
+	
+	@Autowired
+	private BookRepository bookRepository;
+	@Autowired 
+	private BorrowRecordRepository  borrowRecordRepository; 
+	
+
+	public BorrowRecord borrowBook(Long bookId, String borrowerName) {
+		Book book = bookRepository.findById(bookId).orElse(null);
+		if(book == null || book.getAvailableCopies() <=0) {
+			throw new RuntimeException("Book not available");
+		}
+		book.setAvailableCopies(book.getAvailableCopies()-1);
+		bookRepository.save(book);
+		
+		
+		BorrowRecord record = new BorrowRecord();
+		record.setBook(book);
+		reo
+		return ;
+	}
+ 
+}
