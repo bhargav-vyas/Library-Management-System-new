@@ -1062,3 +1062,16 @@ Java Model Exception: Error in Java Model (code 971): Path '/eureka-server/targe
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2025-10-03 13:11:59.220
 !MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+!SESSION 2025-10-04 23:45:28.185 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-04 23:46:40.729
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-04 23:46:44.029
+!MESSAGE Logback config file: C:\Advance Java Projects\Library-Management-System\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
