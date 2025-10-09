@@ -1,7 +1,0 @@
-package com.tka.Repository;
-
-public interface  BorrowRecordRepository {
-
-	
-	
-}
