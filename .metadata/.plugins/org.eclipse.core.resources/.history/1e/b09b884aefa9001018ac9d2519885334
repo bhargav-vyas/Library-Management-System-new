@@ -59,8 +59,8 @@ public class BorrowRecordService {
 		
 	}
 
-//	public BorrowRecord deletById() {
-//		return borrowRecordRepository.deleteAllById(id);
+	public BorrowRecord deletById(Long id) {
+		
 	}
  
 }
