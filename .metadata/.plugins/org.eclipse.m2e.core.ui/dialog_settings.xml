@@ -62,6 +62,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Advance Java Projects\Library-Management-System\Library-Service"/>
+			<item value="C:\Advance Java Projects\Liberary_system\library-service"/>
 			<item value="C:\Advance Java Projects\Library-Management-System"/>
 		</list>
 		<list key="projectNameTemplate">
