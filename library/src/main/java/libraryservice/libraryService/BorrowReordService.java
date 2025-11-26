@@ -6,13 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.tka.Repository.BookRepository;
-import com.tka.Repository.BorrowRecordRepository;
-import com.tka.Repository.MemberRepository;
-
 import jakarta.persistence.Id;
 import libraryservice.libraryController.BorrowRecordController;
 import libraryservice.libraryEntity.BookEntity;
+import libraryservice.libraryREPOSITORY.BookRepository;
 
 @Service
 public class BorrowReordService {

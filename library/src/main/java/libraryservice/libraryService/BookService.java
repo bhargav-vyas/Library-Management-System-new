@@ -3,20 +3,17 @@ package libraryservice.libraryService;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.tka.Entity.Book;
-import com.tka.Repository.BookRepository;
-
 import jakarta.websocket.server.ServerEndpoint;
+import libraryservice.libraryEntity.BookEntity;
+import libraryservice.libraryrEPOSITORY.BookRepository;
 @Service
 public class BookService {
 		@Autowired
 		private BookRepository bookRespsitory;
 		
-		public List<Book> getAllBooks() {
+		public List<BookEntity> getAllBooks() {
 	        return bookRespsitory.findAll();
 	    }
 
