@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 import libraryservice.libraryController.BorrowRecordController;
 import libraryservice.libraryEntity.BookEntity;
 import libraryservice.libraryREPOSITORY.BookRepository;
+import libraryservice.libraryREPOSITORY.BorrowRecordRepository;
 
 @Service
 public class BorrowReordService {
@@ -17,7 +18,7 @@ public class BorrowReordService {
 		@Autowired
 		private BookRepository bookRepository;
 		@Autowired 
-		private BorrowRecordRepository  borrowRecordRepository; 
+		private BorrowRecordRepository borrowRecordRepository; 
 		 @Autowired
 		  private MemberRepository  memberRepository;
 		

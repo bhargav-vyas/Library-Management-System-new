@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import jakarta.websocket.server.ServerEndpoint;
 import libraryservice.libraryEntity.BookEntity;
-import libraryservice.libraryrEPOSITORY.BookRepository;
+import libraryservice.libraryREPOSITORY.BookRepository;
+
 @Service
 public class BookService {
 		@Autowired
@@ -17,18 +18,18 @@ public class BookService {
 	        return bookRespsitory.findAll();
 	    }
 
-		public Book addnewBooks(Book  book) {		
-			return bookRespsitory.save(book);
+		public BookEntity addnewBooks(BookEntity  bookEntity) {		
+			return bookRespsitory.save(bookEntity);
 		}
 
-		public Book getBookById(Long id) {
+		public BookEntity getBookById(Long id) {
 			return bookRespsitory.findById(id).orElse(null);
 		}
 
-		public Book updateBook(Long id, Book updateBook) {
-			Optional<Book> optionalBook = bookRespsitory.findById(id);
+		public BookEntity updateBook(Long id, BookEntity updateBook) {
+			Optional<BookEntity> optionalBook = bookRespsitory.findById(id);
 			if(optionalBook.isPresent()) {
-				Book book =optionalBook.get();
+				BookEntity book =optionalBook.get();
 				book.setTitle(updateBook.getTitle());
 				book.setAuthor(updateBook.getAuthor());
 				book.setIdbn(updateBook.getIdbn());
@@ -46,8 +47,8 @@ public class BookService {
 			return "Book deleted succfully";
 		}
 
-		public List<Book> searchBooks (String title,String author, String category){
-			List<Book> result =  new ArrayList<>();
+		public List<BookEntity> searchBooks (String title,String author, String category){
+			List<BookEntity> result =  new ArrayList<>();
 			if(title != null && !title.isEmpty()) {
 				result.addAll(bookRespsitory.findByTitleContainingIgnoreCase(title));
 			}
@@ -65,4 +66,4 @@ public class BookService {
 	}
 
 
-}
+
