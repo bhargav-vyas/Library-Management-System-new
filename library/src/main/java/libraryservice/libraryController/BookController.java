@@ -1,10 +1,8 @@
 package libraryservice.libraryController;
 
 
-
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,7 +19,6 @@ import libraryservice.libraryEntity.BookEntity;
 import libraryservice.libraryService.BookService;
 
 
-
 @RestController
 @RequestMapping("/api/Book")
 
@@ -31,27 +28,25 @@ public class BookController {
 	
 
 		@Autowired
-		
-		 // this is checked but check once
-		
 		private BookService bookService;
+		
 		@GetMapping("/book")
 	    public List<BookEntity> getAllBooks() {
 	        return bookService.getAllBooks();
 	    }
 		// add new book  not checked aip 
 		@PostMapping("/addnewBooks")
-		public Book  addnewBooks(@RequestBody Book book){
-			return bookService.addnewBooks(book);
+		public BookEntity  addnewBooks(@RequestBody BookEntity bookEntity){
+			return bookService.addnewBooks(bookEntity);
 		}
 		
 		@GetMapping("/{id}")
-		public Book getBookById(@PathVariable Long id) {
+		public BookEntity getBookById(@PathVariable Long id) {
 			return bookService.getBookById(id);
 		}
 		
 		@PutMapping("{id}")
-		public Book  updateBook(@PathVariable Long id, @RequestBody Book book) {
+		public BookEntity  updateBook(@PathVariable Long id, @RequestBody Book book) {
 			return bookService.updateBook(id,book);
 		}
 		@DeleteMapping("/{id}")
@@ -60,7 +55,7 @@ public class BookController {
 		}
 		
 		@GetMapping("/search")
-		public List<Book> searchBook(@RequestParam(required =false)String title, @RequestParam(required= false ) String author,@RequestParam(required = false) String category){
+		public List<BookEntity> searchBook(@RequestParam(required =false)String title, @RequestParam(required= false ) String author,@RequestParam(required = false) String category){
 			return bookService.searchBooks(title, author, category);
 
 			
