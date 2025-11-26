@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import libraryservice.libraryEntity.BookEntity;
+import libraryservice.libraryService.BookService;
+
 
 
 @RestController
@@ -33,7 +36,7 @@ public class BookController {
 		
 		private BookService bookService;
 		@GetMapping("/book")
-	    public List<Book> getAllBooks() {
+	    public List<BookEntity> getAllBooks() {
 	        return bookService.getAllBooks();
 	    }
 		// add new book  not checked aip 
