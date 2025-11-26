@@ -16,6 +16,7 @@ import com.tka.Entity.BorrowRecord;
 import com.tka.Service.BorrowRecordService;
 
 import jakarta.ws.rs.Path;
+import libraryservice.libraryService.BorrowReordService;
 
 @RestController
 @RequestMapping("/api/borrow")
@@ -24,15 +25,15 @@ public class BorrowRecordController {
 	
 		
 		@Autowired
-		private  BorrowRecordService  borrowRecordService;
+		private  BorrowReordService  borrowRecordService;
 		
 		@PostMapping("/{bookId}/member/{memberId}")
-		public BorrowRecord borrowBook(@PathVariable Long bookId, @PathVariable Long memberId) {
+		public BorrowRecordController borrowBook(@PathVariable Long bookId, @PathVariable Long memberId) {
 		 return borrowRecordService.borrowBook(bookId,memberId);	
 		}
 
 		@GetMapping("/getall")
-		public List<BorrowRecord> getAllBorrowRecord(){
+		public List<BorrowRecordController> getAllBorrowRecord(){
 			return borrowRecordService.getAllBorrowRecord();
 	}
 		 
