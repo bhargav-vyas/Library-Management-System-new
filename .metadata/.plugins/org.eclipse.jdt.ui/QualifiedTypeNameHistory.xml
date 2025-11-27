@@ -50,7 +50,13 @@
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="libraryservice.libraryEntity.MemberEntity"/>
-    <fullyQualifiedTypeName name="libraryservice.libraryEntity.BookEntity"/>
     <fullyQualifiedTypeName name="libraryservice.libraryService.BorrowReordService"/>
     <fullyQualifiedTypeName name="libraryservice.libraryController.BorrowRecordController"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryService.BookService"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryrEPOSITORY.BookRepository"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryService.MemberService"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryEntity.BorrwRecordEntity"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryEntity.BookEntity"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryREPOSITORY.BookRepository"/>
+    <fullyQualifiedTypeName name="libraryservice.libraryREPOSITORY.BorrowRecordRepository"/>
 </qualifiedTypeNameHistroy>
