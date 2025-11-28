@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tka.Entity.Book;
-import com.tka.Service.BookService;
+import com.tkaEntity.Book;
+
+
 
 @RestController
 @RequestMapping("/api/Book")
@@ -24,10 +25,10 @@ import com.tka.Service.BookService;
 public class BookController {
 
 	@Autowired
-	
+	private BookService bookService;
 	 // this is checked but check once
 	
-	private BookService bookService;
+	
 	@GetMapping("/book")
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();

@@ -48,7 +48,6 @@
     <fullyQualifiedTypeName name="jakarta.ws.rs.Path"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="libraryservice.libraryEntity.MemberEntity"/>
     <fullyQualifiedTypeName name="libraryservice.libraryService.BorrowReordService"/>
     <fullyQualifiedTypeName name="libraryservice.libraryController.BorrowRecordController"/>
@@ -59,4 +58,6 @@
     <fullyQualifiedTypeName name="libraryservice.libraryEntity.BookEntity"/>
     <fullyQualifiedTypeName name="libraryservice.libraryREPOSITORY.BookRepository"/>
     <fullyQualifiedTypeName name="libraryservice.libraryREPOSITORY.BorrowRecordRepository"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="com.tkaEntity.Book"/>
 </qualifiedTypeNameHistroy>
