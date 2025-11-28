@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tka.Entity.BorrowRecord;
-import com.tka.Service.BorrowRecordService;
+import com.tkaEntity.BorrowRecord;
+import com.tkaService.BorrowRecordService;
 
 import jakarta.ws.rs.Path;
 
