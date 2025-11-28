@@ -7,12 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.tka.Entity.Book;
-import com.tka.Entity.BorrowRecord;
-import com.tka.Entity.Member;
-import com.tka.Repository.BookRepository;
-import com.tka.Repository.BorrowRecordRepository;
-import com.tka.Repository.MemberRepository;
+import com.tkaEntity.Book;
+import com.tkaEntity.BorrowRecord;
+import com.tkaRepository.BookRepository;
+import com.tkaRepository.BorrowRecordRepository;
 
 import jakarta.persistence.Id;
 
@@ -24,7 +22,7 @@ public class BorrowRecordService {
 	@Autowired 
 	private BorrowRecordRepository  borrowRecordRepository; 
 	 @Autowired
-	  private MemberRepository  memberRepository;
+//	  private MemberRepository  memberRepository;
 	
 
 	public BorrowRecord borrowBook(Long bookId, Long memberId) {
