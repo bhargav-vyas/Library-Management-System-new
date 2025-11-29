@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
-    <fullyQualifiedTypeName name="org.hibernate.annotations.ManyToAny"/>
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="java.lang.Long"/>
@@ -54,10 +52,12 @@
     <fullyQualifiedTypeName name="libraryservice.libraryREPOSITORY.BookRepository"/>
     <fullyQualifiedTypeName name="libraryservice.libraryREPOSITORY.BorrowRecordRepository"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="com.tkaRepository.BookRepository"/>
     <fullyQualifiedTypeName name="com.tkaRepository.BorrowRecordRepository"/>
     <fullyQualifiedTypeName name="com.tkaEntity.Book"/>
     <fullyQualifiedTypeName name="com.tkaService.BorrowRecordService"/>
     <fullyQualifiedTypeName name="com.tkaEntity.BorrowRecord"/>
     <fullyQualifiedTypeName name="com.tkaService.BookService"/>
+    <fullyQualifiedTypeName name="com.tkaEntity.Member"/>
+    <fullyQualifiedTypeName name="com.tkaRepository.MemberRepository"/>
+    <fullyQualifiedTypeName name="com.tkaRepository.BookRepository"/>
 </qualifiedTypeNameHistroy>
