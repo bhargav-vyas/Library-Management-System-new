@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.tkaEntity.Book;
 import com.tkaEntity.BorrowRecord;
+import com.tkaEntity.Member;
 import com.tkaRepository.BookRepository;
 import com.tkaRepository.BorrowRecordRepository;
+import com.tkaRepository.MemberRepository;
 
 import jakarta.persistence.Id;
 
@@ -22,7 +24,7 @@ public class BorrowRecordService {
 	@Autowired 
 	private BorrowRecordRepository  borrowRecordRepository; 
 	 @Autowired
-//	  private MemberRepository  memberRepository;
+	  private MemberRepository  memberRepository;
 	
 
 	public BorrowRecord borrowBook(Long bookId, Long memberId) {
