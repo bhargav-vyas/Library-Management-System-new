@@ -58,7 +58,6 @@ INDEX VERSION 1.134+C:\Advance Java Projects\Library-Management-System\.metadata
 884148808.index
 2942348386.index
 1723755503.index
-1531412002.index
 1718047108.index
 3639915535.index
 2339908050.index
