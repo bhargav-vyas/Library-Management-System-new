@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Advance Java Projects\Library-Management-System\library\src\main\java\com\tka\LibraryApplication.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -62,6 +63,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Advance Java Projects\Network Service Health Monitor (Spring Boot)\Network-Service-Health-Monitor-Spring-Boot"/>
 			<item value="C:\Advance Java Projects\Library-Management-System\library"/>
 			<item value="C:\Advance Java Projects\Library-Management-System\Library-Service"/>
 			<item value="C:\Advance Java Projects\Liberary_system\library-service"/>
