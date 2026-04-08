@@ -39,10 +39,10 @@ public class BookController {
 	public Book  addnewBooks(@RequestBody Book book){
 		return bookService.addnewBooks(book);
 	}
-	
-	@GetMapping("/{id}")
-	public Book getBookById(@PathVariable Long id) {
-		return bookService.getBookById(id);
+//	
+//	@GetMapping("/{id}")
+//	public Book getBookById(@PathVariable Long id) {
+//		return bookService.getBookById(id);
 	}
 	
 	@PutMapping("{id}")
